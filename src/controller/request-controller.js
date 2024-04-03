@@ -1,5 +1,5 @@
-const { axiosInstance } = require("../application/axios-auth");
-const { hashingMD5 } = require("../application/helper");
+const { tokenFetch } = require("../application/axios-auth");
+const { axiosInstance } = require("../application/axios-instance");
 const { createLogFile, fs } = require("../application/logging");
 
 const balance = async (req, res, next) => {
