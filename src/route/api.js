@@ -5,6 +5,7 @@ const requestController = require("../controller/request-controller");
 const { callback } = require("../controller/callback-controller");
 
 apiRouter.get("/balance", requestController.balance);
+apiRouter.get("/products", requestController.products);
 
 // callback webhook
 apiRouter.post("/callback", callback);
